@@ -10,14 +10,21 @@ html {
 body {
   font-family: 'Montserrat', sans-serif;
 }
-.rowImage {
-  height:1000px;
-  width:1000px;
+
+
+.ImageHeader {
+  position: fixed; 
+  
+  width: 150%; 
+  height: 150%;
 }
-.imageheader {
-    background-image: url("../Img/grass.jpg");
-    background-position: center;
-    background-size: cover;
-    height:100px;
-    width:100px;
+.ImageHeader img {
+  position: absolute; 
+  top: 0; 
+  left: 0; 
+  right: 0; 
+  bottom: 0; 
+  margin: auto; 
+  min-width: 100%;
+  min-height: 100%;
 }
