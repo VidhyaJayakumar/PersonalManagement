@@ -14,29 +14,14 @@ ul >li> a{
 body {
   font-family: 'Montserrat', sans-serif;
 }
-  .border{
-      background-color:black;
-      width:60px;
-      height:50px;
-      margin-top:5px;
-      margin-bottom:5px;
-      
-  }
-  .border a{
-      position:relative;
-      padding:2px;
-      top:10px;
-      bottom:10px;
-      left:10px;
-  }
-  .row1{
-      height:100px;
-      width:100px;
-  }
-    .imageheader{
-        background-image: url("../Img/grass.jpg");
-        background-position: center;
-        background-size: cover;
-        height:30px;
-        width:30px;
-    }
+.rowImage {
+  height:100px;
+  width:100px;
+}
+.imageheader {
+    background-image: url("../Img/grass.jpg");
+    background-position: center;
+    background-size: cover;
+    height:30px;
+    width:30px;
+}
