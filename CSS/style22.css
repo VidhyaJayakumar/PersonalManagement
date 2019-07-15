@@ -6,22 +6,18 @@ html {
 }
 .container-fluid{
     background-color:#6DF7CB;
-
-}
-ul >li> a{
-    color:red;
 }
 body {
   font-family: 'Montserrat', sans-serif;
 }
 .rowImage {
-  height:100px;
-  width:100px;
+  height:1000px;
+  width:1000px;
 }
 .imageheader {
     background-image: url("../Img/grass.jpg");
     background-position: center;
     background-size: cover;
-    height:30px;
-    width:30px;
+    height:100px;
+    width:100px;
 }
