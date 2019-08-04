@@ -1,15 +1,17 @@
 var mysql = require('mysql');
 
 var con = mysql.createConnection({
-  host: "localhost",
-  user: "root",
-  password: "",
-  database: "test_pgmt"
+  host: 'localhost',
+  user: 'root',
+  port: 3306,
+  password: '',
+  database: 'test_pgmt'
 });
 
 con.connect(function(err) {
   if (err) throw err;
   console.log("Connected!");
+  
   var sql = "INSERT INTO customers (name, address) VALUES ('Vidhya', 'Scarborough')";
   con.query(sql, function (err, result) {
     if (err) throw err;
