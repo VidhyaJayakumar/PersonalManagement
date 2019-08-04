@@ -39,6 +39,13 @@ a {
     color: #f5f5f6;
     text-decoration: none;
 }
+.log{
+    background-color:rgb(0, 255, 13);
+    height:20px;
+    width:10px;
+    padding:1px;
+    float:right;
+}
 #home{
     background-color: red;
 }
