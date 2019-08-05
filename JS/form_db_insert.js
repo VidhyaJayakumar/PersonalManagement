@@ -6,11 +6,11 @@ var urlencodedParser = bodyParser.urlencoded({ extended: true });
 var mysql = require('mysql');
 
 var con = mysql.createConnection({
-  host: 'localhost',
-  user: 'root',
-  port: 3306,
+  host: '',
+  user: 'root@localhost',
   password: '',
-  database: 'test_pgmt'
+  database: 'test_pgmt',
+  socketPath: '/tmp/mysql.sock'
 });
 
 app.listen(3000, function() {
@@ -45,7 +45,8 @@ app.post('/thank', urlencodedParser, function (req, res){
     if (err) throw err;
     console.log("Connected!");
     
-    var sql = 'INSERT INTO customers (name, address) VALUES (' + req.body.name + ',' + req.body.address + ')';
+    var sql = 'INSERT INTO customers (name, address) VALUES (\'' + req.body.name + '\',\'' + req.body.address + '\')';
+    console.log("sql string:"+sql)
     con.query(sql, function (err, result) {
       if (err) throw err;
       console.log("1 record inserted");
